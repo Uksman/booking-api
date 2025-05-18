@@ -32,7 +32,7 @@ exports.handleValidationErrors = (req, res, next) => {
  * Validation rules for routes
  */
 exports.routeValidation = [
-  body('routeNumber').trim().notEmpty().withMessage('Route number is required'),
+  body('routeCode').trim().notEmpty().withMessage('Route Code is required'),
   body('source').trim().notEmpty().withMessage('Source location is required'),
   body('destination').trim().notEmpty().withMessage('Destination location is required')
     .custom((value, { req }) => {

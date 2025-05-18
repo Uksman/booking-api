@@ -517,4 +517,3 @@ RouteSchema.statics.updatePopularity = async function() {
 };
 
 module.exports = mongoose.model('Route', RouteSchema);
-

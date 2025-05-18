@@ -80,6 +80,10 @@ app.use((req, res, next) => {
   next();
 });
 
+app.get('/', (req, res) => {
+  res.send('Welcome to Bus Booking API');
+});
+
 // 9. Health check route (excluded from most middleware)
 app.get('/api/health', (req, res) => {
   res.status(200).json({ status: 'ok', message: 'Server is running' });

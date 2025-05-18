@@ -61,7 +61,7 @@ const BusSchema = new mongoose.Schema({
       required: [true, 'Please specify number of columns']
     },
     layout: {
-      type: [[String]],  // 2D array representing the seating layout
+      type: [[String]],
       default: []
     }
   },
